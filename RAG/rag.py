@@ -41,9 +41,9 @@ embeddings = OpenAIEmbeddings(
 
 embeddings = DashScopeEmbeddings(
     model="text-embedding-v2",
-    dashscope_api_key="sk-d32b98b63d9c426aa7bf99a58f766908")
+    dashscope_api_key="xxx")
 llm = ChatOpenAI(base_url='https://dashscope.aliyuncs.com/compatible-mode/v1',
-                 api_key="sk-d32b98b63d9c426aa7bf99a58f766908",
+                 api_key="xxx",
                  model="qwen2.5-72b-instruct", temperature=0.7)
 
 def text_chunk(file_path):
